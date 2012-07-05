@@ -1,0 +1,21 @@
+<div class="video-container">
+  <div class="column">
+    <% @videos.each_with_index do |video,i| %>
+      <article>
+        <%= image_tag video["thumbnail_small"] %>
+        <div>
+          <h4><%= video["title"] %></h4>
+          <span>
+            <%= video["description"] %>
+            <%= link_to "Watch Video", video["url"], :target => "_blank" %>
+          </span>
+        </div>
+      </article>
+
+      <% if (((i+1) % (@videos.size.to_f / 2.0).ceil) == 0) && (i+1 != @videos.size) %>
+        </div> <!-- end column -->
+        <div class="column">
+      <% end %>
+    <% end %>
+  </div>
+</div>
