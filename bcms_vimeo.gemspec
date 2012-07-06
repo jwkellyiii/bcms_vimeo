@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.summary     = "A module for BrowserCMS used to include Vimeo videos using the SimpleAPI."
   s.description = "A module for BrowserCMS used to include Vimeo videos using the SimpleAPI."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["LICENSE.txt", "Rakefile", "README.rdoc"]
     s.files -= Dir['lib/tasks/module_tasks.rake']
   s.test_files = Dir["test/**/*"]
 
