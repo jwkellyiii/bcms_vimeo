@@ -9,13 +9,13 @@ Gem::Specification.new do |s|
 
   s.name        = "bcms_vimeo"
   s.version     = BcmsVimeo::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of BcmsVimeo."
-  s.description = "TODO: Description of BcmsVimeo."
+  s.authors     = ["John Kelly"]
+  s.email       = ["jwkellyiii@gmail.com"]
+  s.homepage    = "http://resetcss.com"
+  s.summary     = "A module for BrowserCMS used to include Vimeo videos using the SimpleAPI."
+  s.description = "A module for BrowserCMS used to include Vimeo videos using the SimpleAPI."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["LICENSE", "Rakefile", "README.rdoc"]
     s.files -= Dir['lib/tasks/module_tasks.rake']
   s.test_files = Dir["test/**/*"]
 
