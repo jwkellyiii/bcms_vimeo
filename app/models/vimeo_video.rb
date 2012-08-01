@@ -9,7 +9,7 @@ class VimeoVideo < ActiveRecord::Base
   def get_user_videos(video_amount = 1)
     # Remove the cached timeline if its expired
     if self.expires_at.nil? || self.expires_at < Time.now.utc
-      Rails.cache.delete('Vimeo.Videos')
+      Rails.cache.delete('Vimeo.Videos' + video_amount.to_s)
     end
 
     # Make sure to invalidate the cache if the amount chanages
