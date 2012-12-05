@@ -2,12 +2,12 @@
   <div class="column">
     <% @videos.each_with_index do |video,i| %>
       <article>
-        <%= link_to image_tag(video["thumbnail_small"]), video["url"], {:data =>{:toggle=>"modal"}} %>
+        <%= link_to image_tag(video["thumbnail_small"]), "#myModal", {:data =>{:toggle=>"modal"}} %>
         <div>
           <h4><%= video["title"] %></h4>
           <span>
             <%= video["description"] %>
-            <%= link_to "Watch Video", video["url"], {:data =>{:toggle=>"modal"}} %>
+            <%= link_to "Watch Video", "#myModal", {:data =>{:toggle=>"modal"}} %>
           </span>
         </div>
       </article>
