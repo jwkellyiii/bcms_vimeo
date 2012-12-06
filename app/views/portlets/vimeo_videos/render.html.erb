@@ -2,12 +2,12 @@
   <div class="column">
     <% @videos.each_with_index do |video,i| %>
       <article>
-        <%= link_to image_tag(video["thumbnail_small"]), "#myModal", {:data =>{:toggle=>"modal"}} %>
+        <%= link_to image_tag(video["thumbnail_small"]), "#myModal", {:data =>{:toggle=>"modal"}, :class =>video["url"]} %>
         <div>
           <h4><%= video["title"] %></h4>
           <span>
             <%= video["description"] %>
-            <%= link_to "Watch Video", "#myModal", {:data =>{:toggle=>"modal"}} %>
+            <%= link_to "Watch Video", "#myModal", {:data =>{:toggle=>"modal"}, :class =>video["url"]} %>
           </span>
         </div>
       </article>
@@ -22,10 +22,10 @@
     <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            <h3 id="myModalLabel">Video Title</h3>
+            <h3 id="myModalLabel"></h3>
         </div>
         <div class="modal-body">
-          <iframe src="http://player.vimeo.com/video/51914750?byline=0&amp;portrait=0&amp;badge=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          <iframe src="" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
         </div>
     </div>
 </div>
