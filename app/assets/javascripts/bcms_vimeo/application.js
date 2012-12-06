@@ -15,6 +15,7 @@
 //= require_tree .
 
 $('.video-container a').live('click', function() {
+    alert('Here I am');
     var videoID = $(this).attr('class');
     var videoTitle = $(this).parent('article').children('h4').html();
 
