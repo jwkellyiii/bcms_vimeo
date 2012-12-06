@@ -21,4 +21,4 @@ $('.video-container a').live('click', function() {
 
     $('#myModalLabel').html(videoTitle);
     $('.modal-body iframe').attr('src','http://player.vimeo.com/video/' + videoID + '?byline=0&amp;portrait=0&amp;badge=0');
-})
+});
