@@ -1,5 +1,4 @@
-
-$('.column').live('click', function() {
+$('document').on('click','.video-container a', function() {
     alert('Here I am');
     var videoID = $(this).attr('class');
     var videoTitle = $(this).parent('article').children('h4').html();
