@@ -1,6 +1,6 @@
 jQuery(function($) {
     $(document).on('click','.video-container a', function() {
-        var videoID = $(this).attr('class');
+        var videoID = $(this).attr('data-vimeovideoid');
         var videoTitle = $(this).parents('article').find('h4').html();
 
         $('#myModalLabel').html(videoTitle);
